@@ -1,0 +1,111 @@
+/* navbar */
+.menu-active:active{
+    background-color: #555 ;
+}
+
+.navbar-nav .nav-item{
+    margin: 0 1rem;
+}
+
+.nav-item{
+  color: black;
+}
+
+/* iconos navbar */
+
+.iconos-navbar a {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.iconos-navbar a:hover {
+  color: #555;
+}
+
+/* carrusel fotos */
+.carrusel-foto{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fotos-carrusel{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* carrusel nuestros servicios */
+
+.card-body{
+    height: 10rem;
+    background-color:transparent;
+    border: none;
+    box-shadow: none;
+}
+/* estilos pantallas pequeñas y medianas */
+@media (max-width: 1023px) {
+  .carrusel-servicios {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+
+ .carrusel-servicios img {
+    width: 100%;
+    max-height: 50px;
+    object-fit: contain;
+    
+  }
+
+  .carrusel-servicios .text-center a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+  }
+}
+/* estilos pantallas lg */
+
+  @media (min-width: 1024px) {
+    .servicio-lg {
+        max-width: 100px;
+        text-align: center;
+        
+    }
+    
+.servicio-lg-container{
+    margin-top: -9rem;
+    padding-bottom: 1rem;
+}
+
+
+  .servicio-lg img{
+    width: 100%;
+    max-height: 50px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+
+  .servicio-lg .text-center a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+  }
+
+}
+
+/* footer */
+
+footer ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: black;
+}
+
