@@ -1,3 +1,11 @@
+//import about us
+@use "utilidades/variables-about-us" as *;
+
+
+body{
+  background-color: $color-claro-fondo;
+}
+
 /* navbar */
 .menu-active:active{
     background-color: #555 ;
@@ -98,6 +106,7 @@
 
 /* footer */
 
+
 footer ul{
   list-style: none;
   padding-left: 0;
@@ -109,3 +118,44 @@ footer ul li a{
   color: black;
 }
 
+
+/*ESTILOS ABOUT US*/
+
+body{
+  background-color: $color-claro-fondo
+}
+
+
+.navbar-container{
+  @include flex;
+  }
+  .iconos-navbar{
+    a{
+      gap: 5rem;
+      color: black;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+  }
+
+.cuerpo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+   h2{
+    font-size: 1.8rem;
+    margin: 0%;
+   }
+   .bloque{
+    background-color: $color-negro-fondo;
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 1.5rem 3rem;
+    width: fit-content;
+    text-align: center;
+   }
+}
+
+//me quede aca falta sacarle la decoracion del puntito y ver la animacion. Quizas tambien invertir el color. Ampliaremos

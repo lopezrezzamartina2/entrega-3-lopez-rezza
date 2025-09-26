@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  background-color: #F5F5F5;
+}
+
 /* navbar */
 .menu-active:active {
   background-color: #555;
@@ -94,6 +98,46 @@ footer ul {
 footer ul li a {
   text-decoration: none;
   color: black;
+}
+
+/*ESTILOS ABOUT US*/
+body {
+  background-color: #F5F5F5;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3;
+  order: 2;
+}
+
+.iconos-navbar a {
+  gap: 5rem;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.cuerpo h2 {
+  font-size: 1.8rem;
+  margin: 0%;
+}
+.cuerpo .bloque {
+  background-color: #212121;
+  color: whitesmoke;
+  border-radius: 8px;
+  padding: 1.5rem 3rem;
+  width: fit-content;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

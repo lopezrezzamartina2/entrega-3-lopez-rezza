@@ -1,0 +1,12 @@
+
+$color-claro-fondo: #F5F5F5;
+$color-negro-fondo: #212121;
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3;
+    order: 2;
+
+}
