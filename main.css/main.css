@@ -3,6 +3,127 @@ body {
   background-color: #F5F5F5;
 }
 
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3;
+  order: 2;
+  background-color: #F5F5F5;
+}
+
+.iconos-navbar a {
+  gap: 5rem;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.bloques {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3;
+  order: 2;
+  flex-direction: column;
+}
+.bloques .mision, .bloques .historia, .bloques .vision {
+  width: 100vh;
+  height: 200px;
+  border-radius: 8px;
+  background-color: #212121;
+  color: #F5F5F5;
+  border: 1px #212121;
+  box-shadow: 0 20px 30px #212121;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem;
+  position: relative;
+}
+.bloques .mision-titulo {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+  transform: opacity 0.3ms easy;
+  opacity: 1;
+}
+.bloques .mision-texto {
+  position: absolute;
+  text-align: center;
+  font-size: 1rem;
+  transform: opacity 0.3ms easy;
+  opacity: 0;
+}
+.bloques .mision:hover .mision-titulo, .bloques .historia:hover .mision-titulo, .bloques .vision:hover .mision-titulo {
+  opacity: 0;
+}
+.bloques .mision:hover .mision-texto, .bloques .historia:hover .mision-texto, .bloques .vision:hover .mision-texto {
+  opacity: 1;
+}
+
+.vision-titulo {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+  transform: opacity 0.3ms easy;
+  opacity: 1;
+}
+.vision-texto {
+  position: absolute;
+  text-align: center;
+  font-size: 1rem;
+  transform: opacity 0.3ms easy;
+  opacity: 0;
+}
+.vision:hover .vision-titulo {
+  opacity: 0;
+}
+.vision:hover .vision-texto {
+  opacity: 1;
+}
+
+.historia-titulo {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+  transform: opacity 0.3ms easy;
+  opacity: 1;
+}
+.historia-texto {
+  position: absolute;
+  text-align: center;
+  font-size: 1rem;
+  transform: opacity 0.3ms easy;
+  opacity: 0;
+}
+.historia:hover .historia-titulo {
+  opacity: 0;
+}
+.historia:hover .historia-texto {
+  opacity: 1;
+}
+
+.info-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3;
+  order: 2;
+  justify-content: start;
+  gap: 1rem;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
 /* navbar */
 .menu-active:active {
   background-color: #555;
@@ -98,46 +219,6 @@ footer ul {
 footer ul li a {
   text-decoration: none;
   color: black;
-}
-
-/*ESTILOS ABOUT US*/
-body {
-  background-color: #F5F5F5;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3;
-  order: 2;
-}
-
-.iconos-navbar a {
-  gap: 5rem;
-  color: black;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-.cuerpo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-.cuerpo h2 {
-  font-size: 1.8rem;
-  margin: 0%;
-}
-.cuerpo .bloque {
-  background-color: #212121;
-  color: whitesmoke;
-  border-radius: 8px;
-  padding: 1.5rem 3rem;
-  width: fit-content;
-  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
