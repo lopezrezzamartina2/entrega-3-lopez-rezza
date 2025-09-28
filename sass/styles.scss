@@ -4,6 +4,19 @@
 
 body{
   background-color: $color-claro-fondo;
+  padding-top: 70px;
+
+}
+
+.barra-navegacion{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100px ;
+  z-index: 1000;
+  padding: 1rem;
+  background-color: $color-claro-fondo;
 }
 
 /* navbar */
