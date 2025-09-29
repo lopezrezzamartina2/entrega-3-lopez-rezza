@@ -294,6 +294,21 @@ footer {
   bottom: 0;
 }
 
+@media (max-width: 1023px) {
+  .categoria {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0;
+    min-height: auto;
+  }
+  .categoria .producto {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
 body {
   height: 100%;
   margin: 0;
