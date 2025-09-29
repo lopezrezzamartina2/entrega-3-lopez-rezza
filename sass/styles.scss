@@ -1,6 +1,7 @@
 //import about us
 @use "utilidades/variables-about-us" as *;
-
+@use "utilidades/productos-variables" as *;
+@use "utilidades/juicy-couture-variables" as *;
 
 body{
   background-color: $color-claro-fondo;
@@ -13,10 +14,11 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 100px ;
+  height: 70px;
   z-index: 1000;
   padding: 1rem;
   background-color: $color-claro-fondo;
+  
 }
 
 /* navbar */
