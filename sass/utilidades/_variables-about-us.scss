@@ -3,7 +3,6 @@ $color-claro-fondo: #F5F5F5;
 $color-negro-fondo: #212121;
 
 
-//estilos desktop
 
 @mixin flex{
     display: flex;
@@ -31,8 +30,15 @@ body{
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1rem;
+  padding-right: 1rem;
   height: 50px;
+
+  
+  .navbar-collapse, .dropdown-menu {
+    background-color: #f3f3f3; 
+    border-color: transparent;
+    }
+
 
   }
   .iconos-navbar{
@@ -46,7 +52,131 @@ body{
   }
 
 
-.bloques{
+
+//estilos mobile tablet 
+
+    .bloques{
+    @include flex;
+    flex-direction: column;
+    }
+
+        .mision {
+        width: 90%;
+        height: auto;
+        border-radius: 8px;
+        background-color: $color-negro-fondo;
+        color: $color-claro-fondo;
+        border: 1px $color-negro-fondo;
+        box-shadow: 0 20px 30px $color-negro-fondo;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        margin: 1.5rem auto;
+        position: relative;
+
+        &-titulo {
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px;
+        transform: opacity 0.3ms easy;
+        opacity: 1;
+        }
+
+        &-texto {
+        position: absolute;
+        text-align: center;
+        font-size: 0.9rem;
+        transform: opacity 0.3ms easy;
+        opacity: 0;  
+        }
+        
+        &:hover{
+
+        .mision-titulo {
+            opacity: 0;
+        }
+
+        .mision-texto{
+            opacity: 1;
+        }
+
+    }
+    }
+    
+
+    .vision {
+        @extend .mision;
+
+        &-titulo {
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px;
+        transform: opacity 0.3ms easy;
+        opacity: 1;
+        }
+
+        &-texto {
+        position: absolute;
+        text-align: center;
+        font-size: 1rem;
+        transform: opacity 0.3ms easy;
+        opacity: 0;  
+        }
+        
+        &:hover{
+
+        .vision-titulo {
+            opacity: 0;
+        }
+
+        .vision-texto{
+            opacity: 1;
+        }
+
+    }
+    }
+        
+    .historia {
+        @extend .mision;
+        &-titulo {
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px;
+        transform: opacity 0.3ms easy;
+        opacity: 1;
+        }
+
+        &-texto {
+        position: absolute;
+        text-align: center;
+        font-size: 0.9rem;
+        transform: opacity 0.3ms easy;
+        opacity: 0;  
+        }
+        
+        &:hover{
+
+        .historia-titulo {
+            opacity: 0;
+        }
+
+        .historia-texto{
+            opacity: 1;
+        }
+
+    }
+    }
+
+
+    //estilos desktop
+
+@media (min-width:1024px){
+    .bloques{
     @include flex;
     flex-direction: column;
     height: 90vh;
@@ -168,124 +298,4 @@ body{
     justify-content: start;
     gap: 1rem;
 }
-
-
-//estilos mobile tablet 
-
-@media (max-width: 1023px){
-    .bloques{
-    @include flex;
-    flex-direction: column;
-    }
-
-        .mision {
-        width: 90%;
-        height: auto;
-        border-radius: 8px;
-        background-color: $color-negro-fondo;
-        color: $color-claro-fondo;
-        border: 1px $color-negro-fondo;
-        box-shadow: 0 20px 30px $color-negro-fondo;
-        padding: 1.5rem;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        margin: 1.5rem auto;
-        position: relative;
-
-        &-titulo {
-        font-size: 1.1rem;
-        font-weight: 400;
-        text-align: center;
-        margin: 10px;
-        transform: opacity 0.3ms easy;
-        opacity: 1;
-        }
-
-        &-texto {
-        position: absolute;
-        text-align: center;
-        font-size: 0.9rem;
-        transform: opacity 0.3ms easy;
-        opacity: 0;  
-        }
-        
-        &:hover{
-
-        .mision-titulo {
-            opacity: 0;
-        }
-
-        .mision-texto{
-            opacity: 1;
-        }
-
-    }
-    }
-    }
-
-    .vision {
-        @extend .mision;
-
-        &-titulo {
-        font-size: 1.25rem;
-        font-weight: 400;
-        text-align: center;
-        margin: 10px;
-        transform: opacity 0.3ms easy;
-        opacity: 1;
-        }
-
-        &-texto {
-        position: absolute;
-        text-align: center;
-        font-size: 1rem;
-        transform: opacity 0.3ms easy;
-        opacity: 0;  
-        }
-        
-        &:hover{
-
-        .vision-titulo {
-            opacity: 0;
-        }
-
-        .vision-texto{
-            opacity: 1;
-        }
-
-    }
-    }
-        
-    .historia {
-        @extend .mision;
-        &-titulo {
-        font-size: 1.1rem;
-        font-weight: 400;
-        text-align: center;
-        margin: 10px;
-        transform: opacity 0.3ms easy;
-        opacity: 1;
-        }
-
-        &-texto {
-        position: absolute;
-        text-align: center;
-        font-size: 0.9rem;
-        transform: opacity 0.3ms easy;
-        opacity: 0;  
-        }
-        
-        &:hover{
-
-        .historia-titulo {
-            opacity: 0;
-        }
-
-        .historia-texto{
-            opacity: 1;
-        }
-
-    }
-    }
+}

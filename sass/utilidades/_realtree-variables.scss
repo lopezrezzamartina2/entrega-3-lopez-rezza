@@ -27,12 +27,12 @@ body{
   width: 100%;
   z-index: 1000;
   padding: 1rem;
-  
-    .navbar-collapse, .dropdown-menu {
+
+  .navbar-collapse, .dropdown-menu {
     background-color: #f3f3f3; 
     border-color: transparent;
     }
-
+  
   .iconos-navbar{
     a{
       gap: 5rem;
@@ -46,6 +46,9 @@ body{
   }
 
   .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     a{
       color: black;
       background-color: transparent;
@@ -69,12 +72,10 @@ body{
 
 //ESTILOS DESKTOP
 
-@media (min-width: 1024px) {
-  .cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 1rem;
-    padding: 2rem;
+@media (min-width: 1024px){
+    .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-    }
+}
