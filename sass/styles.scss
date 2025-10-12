@@ -1,9 +1,7 @@
 //import about us
 @use "utilidades/variables-about-us" as *;
 @use "utilidades/productos-variables" as *;
-@use "utilidades/juicy-couture-variables" as *;
-@use "utilidades/playboy-variables" as *;
-@use "utilidades/realtree-variables" as *;
+@use "utilidades/marcas-variables" as *;
 
 
 
@@ -126,16 +124,16 @@ body{
 
 /* footer */
 
-
-footer ul{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
+footer{
+  ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
   
-}
-
-footer ul li a{
-  text-decoration: none;
-  color: black;
 }
