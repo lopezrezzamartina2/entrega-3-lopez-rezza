@@ -401,6 +401,59 @@ body {
   }
 }
 body {
+  height: 100%;
+  margin: 0;
+  padding-top: 80px;
+  background-color: #F5F5F5;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3;
+  order: 2;
+  background-color: #F5F5F5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-right: 1rem;
+  height: 50px;
+}
+.navbar-container .navbar-collapse, .navbar-container .dropdown-menu {
+  background-color: #f3f3f3;
+  border-color: transparent;
+}
+
+.iconos-navbar a {
+  gap: 5rem;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.title h1 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.elemento-1, .elemento-2 {
+  padding: 0.5rem;
+}
+.elemento-1 h5, .elemento-2 h5 {
+  font-size: 1rem;
+}
+
+.medios {
+  margin: 0.5rem;
+}
+.medios h4 {
+  font-size: 1rem;
+}
+body {
   background-color: #F5F5F5;
   margin-right: 0;
 }
