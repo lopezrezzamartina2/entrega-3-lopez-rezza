@@ -53,6 +53,16 @@ body{
     }
   }
 
+  footer{
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 0%;
+    padding-bottom: 2rem;
+    margin: 0%;
+    width: auto;
+  }
+    
 
   //ESTILOS MOBILE
 
@@ -87,14 +97,4 @@ body{
     }
   }
 
-  footer{
-    display: flex;
-    text-align: center;
-    font-size: 1rem;
-    padding-top: 0%;
-    padding-bottom: 2rem;
-    display: inline-block; 
-    margin: 0%;
-    width: auto;
-  }
-    }
+}

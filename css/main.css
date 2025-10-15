@@ -363,6 +363,16 @@ body {
   border-color: transparent;
 }
 
+footer {
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0%;
+  padding-bottom: 2rem;
+  margin: 0%;
+  width: auto;
+}
+
 .cards {
   height: 90vh;
   display: grid;
@@ -389,29 +399,12 @@ body {
     min-width: 350px;
     box-sizing: border-box;
   }
-  footer {
-    display: flex;
-    text-align: center;
-    font-size: 1rem;
-    padding-top: 0%;
-    padding-bottom: 2rem;
-    display: inline-block;
-    margin: 0%;
-    width: auto;
-  }
 }
-body {
-  height: 100%;
-  margin: 0;
-  padding-top: 80px;
-  background-color: #F5F5F5;
-}
-
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3;
+  gap: 3rem;
   order: 2;
   background-color: #F5F5F5;
   position: fixed;
@@ -435,6 +428,23 @@ body {
   margin-right: 10px;
 }
 
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.informacion-compra {
+  padding-top: 85px;
+  flex-grow: 1;
+}
+
 .title h1 {
   font-size: 1.1rem;
   text-align: center;
@@ -452,6 +462,26 @@ body {
 }
 .medios h4 {
   font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  body {
+    height: 100%;
+  }
+  .contenedor {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor .informacion-compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  footer {
+    margin-top: auto;
+  }
 }
 body {
   background-color: #F5F5F5;
@@ -508,6 +538,29 @@ body {
   display: block;
 }
 
+/* footer */
+footer {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+footer ul li a:hover {
+  color: #888;
+}
+
 /* carrusel nuestros servicios */
 .card-body {
   height: 10rem;
@@ -554,17 +607,6 @@ body {
     color: black;
     font-size: 0.8rem;
   }
-}
-/* footer */
-footer ul {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  list-style: none;
-}
-footer ul a {
-  text-decoration: none;
-  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

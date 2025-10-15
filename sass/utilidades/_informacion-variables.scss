@@ -7,17 +7,9 @@ $color-negro: #212121;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3;
+    gap: 3rem;
     order: 2;
 
-}
-
-
-body{
-    height: 100%;
-    margin: 0;
-    padding-top: 80px;
-    background-color: $color-claro;
 }
 
 
@@ -50,7 +42,24 @@ body{
     }
   }
 
-//estilos mobile 
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+ 
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.informacion-compra{
+  padding-top: 85px;
+  flex-grow: 1;
+  
+  
+}
 
 .title{
     h1{
@@ -75,3 +84,32 @@ body{
         
     }
 }
+
+//estilos desktop
+
+@media (min-width: 1024px){
+  body{
+  height: 100%;
+}
+.contenedor{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  
+  .informacion-compra{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+}
+
+  footer{
+    margin-top: auto
+  }
+  
+}
+
